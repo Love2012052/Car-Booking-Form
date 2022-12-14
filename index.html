@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      button {
+        width: 100%;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        box-sizing: border-box;
+        padding: 20px 0px;
+        font-size: 16px;
+      }
+      .div1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .divchild {
+        width: 40%;
+      }
+      form {
+        width: 40%;
+        color: blue;
+        padding: 20px 40px;
+        border: 4px solid blue;
+        border-radius: 10px;
+      }
+      .flex {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+      @media screen and (max-width: 800px) {
+        .heading {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 16px;
+        }
+        form {
+          width: 70%;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <form>
+        <h1>Car Booking Form</h1>
+        <h2 class="heading">Name</h2>
+        <input type="text" required placeholder="Your Name" />
+        <br />
+        <h2 class="heading">Phone Number</h2>
+        <input type="number" required placeholder="Your Phone Number" />
+        <br />
+        <h2 class="heading">Email Address</h2>
+        <input type="email" placeholder="Your Email Address" required />
+        <br />
+        <h2 class="heading" for="passenger">No. of Passengers</h2>
+        <select name="passenger" class="flex">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <br />
+        <h2 class="heading">Pickup Location</h2>
+        <input type="text" required placeholder="Enter an origin location" />
+        <br />
+        <h2 class="heading">Drop Location</h2>
+        <input
+          type="text"
+          required
+          placeholder="Enter a destination location"
+        />
+        <br />
+        <h2 class="heading">Pickup Date</h2>
+        <input type="date" required />
+        <br />
+        <h2 class="heading">Pickup Time</h2>
+        <input type="time" required />
+        <br />
+        <h2 class="heading" for="book">Will you return with us?</h2>
+        <select name="book" class="flex">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        <br />
+        <br />
+        <br />
+        <button>Book</button>
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
